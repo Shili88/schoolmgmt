@@ -12,23 +12,27 @@ User Creation Process:
 1. Prompt for a user type to create: student, teacher, homeroom teacher, end. After creating a user (except for 'end'), the menu should be displayed again.
   - 'student': Prompt for the student's first and last name (as one or two variables, depending on your design) and the class name (e.g., "3C").
   - 'teacher': Prompt for the teacher's first and last name (as one or two variables, depending on your design), the subject they teach, and the names of the classes they teach, until an empty line is entered.
-  - 'homeroom teacher': Prompt for the homeroom teacher's first and last name (as one or two variables, depending on your design), and the name of the class they lead.
+  - 'homeroom teacher': Prompt for the homeroom teacher's first and last name (as one or two variables, depending on your design), and the name of the class they lead. = need to assign them to the proper group 
   - 'end': Return to the main menu.
 
-User Management Process:
+User Management Process: - reading from the memory, based on some prompt - student then pass the name (for XX loioking XX)
 
 1. Prompt for an option to manage: class, student, teacher, homeroom teacher, end. After managing an option (except for 'end'), the menu should be displayed again.
-  - 'class': Prompt for a class to display (e.g., "3C"), the program should list all students in the class and the homeroom teacher.
-  - 'student': Prompt for a student's first and last name, the program should list all the classes the student attends and the teachers of these classes.
-  - 'teacher': Prompt for a teacher's first and last name, the program should list all the classes the teacher teaches.
-  - 'homeroom teacher': Prompt for a homeroom teacher's first and last name, the program should list all students the homeroom teacher leads.
+  - 'class': Prompt for a class to display (e.g., "3C"), the program should list all students in the class and the homeroom teacher. = subject such as history or geography 
+  - 'student': Prompt for a student's first and last name, the program should list all the classes (***subject such as history or geography***) the student attends and the teachers of these classes.
+  - 'teacher': Prompt for a teacher's first and last name, the program should list all the classes (***subject such as history or geography***) the teacher teaches.
+  - 'homeroom teacher' (supervisor teacher - each year has different one): Prompt for a homeroom teacher's first and last name, the program should list all students the homeroom teacher leads (***single teacher respond for the class***).
   - 'end': Return to the main menu.
 
 Hints:
 
 - Use loops and conditionals to control the flow of your program.
-- Keep track of users and their attributes in suitable data structures.
+- Keep track of users and their attributes in suitable data structures. = create class for this object 
 - Handle possible errors like entering a user that doesn't exist in the database.
+
+Testing note:
+Create:
+student: Li Tai 3A
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process 
 .venv\Scripts\activate
